@@ -19,7 +19,10 @@ Al abrir la aplicación, el usuario encuentra la pantalla principal (Home) que i
 2. **"Ver Mis Tareas"** (turquesa) - Muestra todas las tareas con filtros
 3. **"Tareas de la API"** (naranja) - Consume y muestra tareas desde JSONPlaceholder
 
-![Pantalla Home con resumen y botones principales](assets/home.png)
+<p align="center">
+  <img src="assets/home.png" alt="Pantalla Home" width="350"/>
+</p>
+
 
 ---
 
