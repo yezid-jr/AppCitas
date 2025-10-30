@@ -20,7 +20,7 @@ Al abrir la aplicación, el usuario encuentra la pantalla principal (Home) que i
 3. **"Tareas de la API"** (naranja) - Consume y muestra tareas desde JSONPlaceholder
 
 <p align="center">
-  <img src="assets/home.png" alt="Pantalla Home" width="350"/>
+  <img src="assets/home.png" alt="Pantalla Home" width="250"/>
 </p>
 
 
@@ -43,7 +43,9 @@ La primera pantalla de creación incluye:
 - Mensajes de error en tiempo real debajo de cada campo
 - Toast de advertencia si se intenta avanzar sin completar
 
-![Paso 1 - Formulario con validaciones]
+<p align="center">
+  <img src="assets/create-new-task.png" alt="Formulario" width="250"/>
+</p>
 
 ### **PASO 2: Fecha Límite**
 La segunda pantalla incluye:
@@ -58,7 +60,10 @@ La segunda pantalla incluye:
 - Botón "+7 días" para una semana adelante
 - Formato de fecha: DD/MM/YYYY
 
-![Paso 2 - Selección de fecha con validación]
+<p align="center">
+  <img src="assets/select-date.png" alt="select date" width="250"/>
+  <img src="assets/banner-date.png" alt="banner date" width="250"/>
+</p>
 
 ---
 
@@ -99,16 +104,18 @@ Cada tarea se muestra en una card con:
 - Botón circular "+" en la esquina inferior derecha
 - Acceso rápido para crear nueva tarea
 
-![Lista de tareas con filtros activos y tarjetas]
+<p align="center">
+  <img src="assets/mis-tareas-view.png" alt="Mis tareas vista" width="250"/>
+</p>
 
 ---
 
-## 🔄 FUNCIONAMIENTO DE BOTONES DE ACCIÓN
+## FUNCIONAMIENTO DE BOTONES DE ACCIÓN
 
 ### **Ejemplo de Flujo Completo:**
 
-#### 1️⃣ **EDITAR TAREA:**
-Al presionar el botón **"Edit" ✏️** en cualquier tarea:
+#### **EDITAR TAREA:**
+Al presionar el botón **"Edit"** en cualquier tarea:
 - Se abre la pantalla de edición
 - Todos los campos se llenan automáticamente con los datos actuales
 - El usuario puede modificar:
@@ -133,9 +140,12 @@ Después de Editar:
 - Fecha: 03/11/2025
 ```
 
-![Pantalla de edición con campos pre-llenados]
+<p align="center">
+  <img src="assets/edit-task.png" alt="Editar tarea" width="250"/>
+  <img src="assets/edit-success.png" alt="editar completado" width="250"/>
+</p>
 
-#### 2️⃣ **TOGGLE COMPLETADO:**
+#### **TOGGLE COMPLETADO:**
 Al presionar el **círculo de estado** (⭕/✅):
 - La tarea cambia inmediatamente de estado
 - Si está pendiente → pasa a completada (aparece check verde ✅)
@@ -143,18 +153,20 @@ Al presionar el **círculo de estado** (⭕/✅):
 - El título se tacha cuando está completada
 - El fondo de la card cambia a gris claro
 
-#### 3️⃣ **ELIMINAR TAREA:**
+#### **ELIMINAR TAREA:**
 Al presionar el botón **"Delete" 🗑️** (rojo):
 - La tarea se elimina permanentemente de la base de datos
 - Aparece Toast confirmando: "Tarea eliminada"
 - La lista se actualiza automáticamente
 - No hay confirmación adicional (eliminación directa)
 
-![Antes y después de eliminar tarea]
+<p align="center">
+  <img src="assets/task-complete.png" alt="tarea completada" width="250"/>
+</p>
 
 ---
 
-## 🌐 CONSUMO DE API REST: JSONPlaceholder
+## CONSUMO DE API REST: JSONPlaceholder
 
 ### **Funcionalidades de la Pantalla API:**
 
@@ -193,7 +205,9 @@ Al presionar **"Agregar"** en una tarea de la API:
 - Vuelve a hacer la petición HTTP
 - Toast de confirmación al actualizar
 
-![Pantalla API con estados: cargando, error y éxito]
+<p align="center">
+  <img src="assets/api-tasks.png" alt="Tareas de la API" width="250"/>
+</p>
 
 ---
 
@@ -424,29 +438,44 @@ implementation("androidx.activity:activity-compose:1.8.1")
 
 ## CAPTURAS DE PANTALLA
 
-### 1. Pantalla Home
-[Insertar captura del Home con resumen y botones]
+<table border="1" cellspacing="0" cellpadding="10">
+  <tr>
+    <th>Pantalla</th>
+    <th>Captura</th>
+  </tr>
 
-### 2. Crear Tarea - Paso 1
-[Insertar captura del formulario paso 1]
+  <tr>
+    <td><strong>1. Pantalla Home</strong><br>Resumen y botones principales</td>
+    <td><img src="assets/home.png" alt="Pantalla Home" width="300"></td>
+  </tr>
 
-### 3. Crear Tarea - Paso 2
-[Insertar captura del DatePicker]
+  <tr>
+    <td><strong>2. Crear Tarea - Paso 1</strong><br>Formulario inicial</td>
+    <td><img src="assets/create-new-task.png" alt="Crear Tarea Paso 1" width="300"></td>
+  </tr>
 
-### 4. Lista de Tareas con Filtros
-[Insertar captura de la lista completa]
+  <tr>
+    <td><strong>3. Crear Tarea - Paso 2</strong><br>DatePicker</td>
+    <td><img src="assets/select-date.png" alt="Crear Tarea Paso 2" width="300"></td>
+  </tr>
 
-### 5. Editar Tarea
-[Insertar captura de la pantalla de edición]
+  <tr>
+    <td><strong>4. Lista de Tareas con Filtros</strong></td>
+    <td><img src="assets/mis-tareas-view-filters.png" alt="Lista de Tareas con Filtros" width="300"></td>
+  </tr>
 
-### 6. API - Estado de Carga
-[Insertar captura del loading]
+  <tr>
+    <td><strong>5. Editar Tarea</strong></td>
+    <td><img src="assets/edit-task.png" alt="Editar Tarea" width="300"></td>
+  </tr>
 
-### 7. API - Lista de Tareas
-[Insertar captura de tareas de la API]
+  <tr>
+    <td><strong>6. API - Lista de Tareas</strong></td>
+    <td><img src="assets/api-tasks.png" alt="Lista de Tareas API" width="300"></td>
+  </tr>
+</table>
 
-### 8. API - Estado de Error
-[Insertar captura del error de conexión]
+
 
 ---
 
@@ -468,11 +497,11 @@ Este proyecto permitió comprender y aplicar conceptos avanzados de desarrollo A
 ## AUTOR
 
 Yesid Castro  
-[https://github.com/yezid-jr/]
+https://github.com/yezid-jr/
 Fecha: Octubre 2025
 
 ---
 
 ## 📄 LICENCIA
 
-[Especificar licencia si aplica]
+Este proyecto está licenciado bajo la **MIT License**
